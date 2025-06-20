@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import './App.css';
 
 export default function App() {
@@ -22,9 +23,7 @@ export default function App() {
       <About />
       <Projects />
       <Contact />
-      <footer className="bg-gray-950 py-6 text-center text-gray-500 text-sm transition-colors duration-500">
-        © {new Date().getFullYear()} Daniel Musau. All rights reserved.
-      </footer>
-    </div>
+      <Footer />
+      </div>
   );
 }
