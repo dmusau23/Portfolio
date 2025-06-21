@@ -6,7 +6,7 @@ export default function Header({ isMenuOpen, setIsMenuOpen, handleNavClick }) {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <img
-            src="./src/assets/logo.png"
+            src="/logo.png"
             alt="Daniel Musau Logo"
             className="h-10 w-auto transition duration-300"
           />
