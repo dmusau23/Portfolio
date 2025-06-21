@@ -36,36 +36,32 @@ export default function Projects() {
             >
               <h4 className="text-xl font-semibold text-white">{project.title}</h4>
               <p className="text-gray-400 mt-2 text-sm">{project.description}</p>
-              {/* <div className="mt-4 flex flex-row items-center space-x-4 justify-center">
-            <a  href={project.git} target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline mt-4 inline-block">
-                        View Project
-                    </a>
-                    <a  href={project.demo} target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline mt-4 inline-block">
-                        View Project
-                    </a>
-                </div>
-            </div> */}
-            <div className="flex-grow"></div>
 
-      <div className="mt-4 flex flex-row items-center space-x-4 justify-center text-2xl hover:text-white">
-        <a
-          href={project.git}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-cyan-400 hover:text-white inline-block"
-        >
-          {github}
-        </a>
-        <a
-          href={project.demo}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-cyan-400 hover:text-white inline-block"
-        >
-          {web}
-        </a>
-      </div>
-    </div>
+                <div className="flex-grow"></div>
+
+                <div className="mt-4 flex flex-row items-center space-x-4 justify-center text-2xl hover:text-white">
+                    {project.git && (
+                        <a
+                            href={project.git}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-cyan-400 hover:text-white inline-block"
+                        >
+                            {github}
+                        </a>
+                        )}
+                        {project.demo && (
+                        <a
+                            href={project.demo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-cyan-400 hover:text-white inline-block"
+                        >
+                            {web}
+                        </a>
+                    )}
+                </div>
+                </div>
           ))}
         </div>
       </div>

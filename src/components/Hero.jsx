@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 export default function Hero() {
   const [typedText, setTypedText] = useState('');
-  const fullText = "Hi, I'm Daniel Musau";
+  const fullText = "Hi, I'm Daniel 👋🏾";
 
   useEffect(() => {
     let index = 0;

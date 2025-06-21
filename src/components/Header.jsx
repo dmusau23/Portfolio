@@ -4,7 +4,16 @@ export default function Header({ isMenuOpen, setIsMenuOpen, handleNavClick }) {
   return (
     <header className="bg-gray-900 shadow-md sticky top-0 z-50 transition duration-300 ease-in-out">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-cyan-400 transition duration-300">Daniel Musau</h1>
+        <div className="flex items-center space-x-2">
+          <img
+            src="./src/assets/logo.png"
+            alt="Daniel Musau Logo"
+            className="h-10 w-auto transition duration-300"
+          />
+          <h1 className="text-2xl font-bold text-cyan-400 transition duration-300">
+            Daniel Musau
+          </h1>
+        </div>
 
         <div className="md:hidden">
           <button
