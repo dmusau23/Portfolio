@@ -7,7 +7,7 @@ This is my personal developer portfolio built with **React**, **Vite**, and **Ta
 
 ## 🚀 Live Site
 
-👉 [Visit Portfolio](https://dmusau.netlify.app)
+👉 [Visit Portfolio](https://dmusau.dev)
 
 ## 📁 Project Structure
 ```bash

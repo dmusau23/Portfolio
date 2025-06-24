@@ -13,7 +13,6 @@ export default function Projects() {
     title: "Personal Website",
     description:
       "My own portfolio built with React and Tailwindcss. Hosted on Netlify.",
-      demo:"https://danielmusau23.netlify.app/",
       git:"https://github.com/dmusau23/Portfolio",
   },
   {

@@ -5,6 +5,11 @@ export default function About() {
     <section id="about" className="py-20 px-4 bg-gray-900 transition-colors duration-500">
       <div className="max-w-4xl mx-auto text-center">
         <h3 className="text-3xl font-bold text-cyan-400 mb-4 animate-fade-in">About Me</h3>
+        <img
+          src="/me.png"
+          alt="Daniel"
+          className="w-60 h-60 rounded-full border-4 border-white-400 shadow-lg mb-4 text-center mx-auto animate-fade-in"
+        />
         <p className="text-gray-300 text-lg animate-fade-in delay-100">
           I'm a junior Software Development student with hands-on experience in React, Java, Spring Boot, and MySQL. I love building meaningful, user-centered apps. Currently working on a smart event management system called <span className="text-cyan-400 font-semibold">SmartCrowd</span>.
         </p>

@@ -29,6 +29,7 @@ export default function Header({ isMenuOpen, setIsMenuOpen, handleNavClick }) {
         <nav className="hidden md:flex space-x-4">
           <a href="#about" onClick={handleNavClick} className="hover:text-cyan-400 transition duration-300">About</a>
           <a href="#projects" onClick={handleNavClick} className="hover:text-cyan-400 transition duration-300">Projects</a>
+          <a href="#skills" onClick={handleNavClick} className="hover:text-cyan-400 transition duration-300">Skills</a>
           <a href="#contact" onClick={handleNavClick} className="hover:text-cyan-400 transition duration-300">Contact</a>
         </nav>
       </div>
@@ -37,6 +38,7 @@ export default function Header({ isMenuOpen, setIsMenuOpen, handleNavClick }) {
         <div className="md:hidden bg-gray-800 px-4 py-2 space-y-2 animate-fade-in text-center">
           <a href="#about" onClick={handleNavClick} className="block text-white hover:text-cyan-400 transition duration-300">About</a>
           <a href="#projects" onClick={handleNavClick} className="block text-white hover:text-cyan-400 transition duration-300">Projects</a>
+          <a href="#skills" onClick={handleNavClick} className="block text-white hover:text-cyan-400 transition duration-300">Skills</a>
           <a href="#contact" onClick={handleNavClick} className="block text-white hover:text-cyan-400 transition duration-300">Contact</a>
         </div>
       )}
