@@ -63,6 +63,7 @@ export default function Projects() {
                 </div>
           ))}
         </div>
+        <p><br /><br />These are just a sample. For more you can check my github page.</p>
       </div>
     </section>
   );

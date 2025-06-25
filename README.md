@@ -29,6 +29,7 @@ src/
 
 - React (via Vite)
 - Tailwind CSS
+- Vanta.js (for dynamic backgrounds)
 - FormSubmit (for contact form)
 - Netlify (for deployment)
 
