@@ -1,62 +1,92 @@
 export const projects = [
-{
-title: "SmartCrowd — Smart Event Management",
-period: "2025",
-tagline: "Real-time ticketing, check-in, and crowd monitoring",
-tech: ["React", "Spring Boot", "MySQL", "WebSockets", "Tailwind"],
-highlights: [
-"Built REST APIs in Spring Boot; 90%+ unit test coverage",
-"Real-time check-in dashboard with WebSockets",
-"Normalized MySQL schema; reduced duplicate records by 30%",
-"Role-based access for organizers and staff",
-],
-links: {
-demo: "https://your-demo-link.com",
-repo: "https://github.com/dmusau23/smartcrowd" // update if different
-},
-image: "/images/smartcrowd.png",
-},
-{
-title: "Text Adventure Game (Java)",
-period: "2024",
-tagline: "Console-based adventure with rooms, exits, items",
-tech: ["Java"],
-highlights: [
-"Parser for commands (MOVE, TAKE, USE) with robust input handling",
-"Modular Room/Exit/Item classes; easy to extend",
-],
-links: {
-repo: "https://github.com/dmusau23/text-adventure"
-},
-image: "/images/text-adventure.png",
-},
-{
-title: "Personal Website",
-period: "2025",
-tagline: "Landing site and blog hosted on Netlify",
-tech: ["HTML", "CSS", "JavaScript", "jQuery"],
-highlights: [
-"Optimized Lighthouse performance 95+",
-"Responsive layout and dark mode",
-],
-links: {
-demo: "https://dmusau.domains.ggc.edu",
-repo: "https://github.com/dmusau23/Personal-Website"
-},
-image: "/images/personal-site.png",
-},
-{
-title: "Stadium Entry System (Hackathon)",
-period: "2025",
-tagline: "Buy tickets, check tickets, print tickets",
-tech: ["React", "Spring Boot", "MySQL"],
-highlights: [
-"End-to-end flow: purchase → QR code → scan at gate",
-"Queue-safe scanning with idempotent validation",
-],
-links: {
-repo: "https://github.com/dmusau23/stadium-entry"
-},
-image: "/images/stadium-entry.png",
-},
+  {
+    title: "Portfolio Website",
+    period: "2025",
+    tagline: "Personal portfolio and project showcase",
+    tech: ["React", "Vite", "Tailwind CSS", "JavaScript"],
+    highlights: [
+      "Designed a responsive portfolio to present my work and technical strengths clearly.",
+      "Built reusable sections for projects, skills, and contact with a polished dark/light theme.",
+      "Focused on readability and usability so employers can quickly understand my background."
+    ],
+    links: {
+      repo: "https://github.com/dmusau23/Portfolio"
+    },
+    image: "/logo.png"
+  },
+  {
+    title: "SpringBootWebSecurity",
+    period: "2025",
+    tagline: "Secure web app using Java Spring Security",
+    tech: ["Java", "Spring Boot", "Spring Security", "MySQL"],
+    highlights: [
+      "Built a web application centered on authentication and authorization patterns.",
+      "Implemented backend security concepts in a practical, production-style setup.",
+      "Demonstrates my growing confidence with enterprise Java development."
+    ],
+    links: {
+      repo: "https://github.com/dmusau23/SpringBootWebSecurity"
+    },
+    image: "/vite.svg"
+  },
+  {
+    title: "Weather App",
+    period: "2025",
+    tagline: "Live weather app with responsive UI",
+    tech: ["JavaScript", "HTML", "CSS", "API Integration"],
+    highlights: [
+      "Connected a frontend app to a live weather API and displayed dynamic results.",
+      "Built a user-friendly interface with responsive layout and readable data presentation.",
+      "Improved my frontend fundamentals around DOM updates, API calls, and UI design."
+    ],
+    links: {
+      repo: "https://github.com/dmusau23/Weather-App"
+    },
+    image: "/vite.svg"
+  },
+  {
+    title: "AutoRepair Finder",
+    period: "2025",
+    tagline: "TypeScript app for discovering repair resources",
+    tech: ["TypeScript", "React", "Vite", "Tailwind CSS"],
+    highlights: [
+      "Created a modern frontend focused on solving a real-world problem in the auto-care space.",
+      "Built with a cleaner component structure and a maintainable TypeScript codebase.",
+      "Shows my interest in practical product design and scalable frontend architecture."
+    ],
+    links: {
+      repo: "https://github.com/dmusau23/autorepair-finder"
+    },
+    image: "/vite.svg"
+  },
+  {
+    title: "GreenHealthySchools",
+    period: "2025",
+    tagline: "Collaborative team project for school wellness",
+    tech: ["TypeScript", "React", "Team Project", "GitHub"],
+    highlights: [
+      "Worked as part of a collaborative development team to build a product-focused application.",
+      "Contributed to shared engineering workflows, communication, and implementation.",
+      "Demonstrates my teamwork mindset and ability to collaborate in a software project environment."
+    ],
+    links: {
+      repo: "https://github.com/dmusau23/GreenHealthySchools"
+    },
+    image: "/vite.svg"
+  },
+  {
+    title: "ITEC 3860 Game",
+    period: "2025",
+    tagline: "Team-based Java game project",
+    tech: ["Java", "Game Development", "Team Collaboration"],
+    highlights: [
+      "Built and contributed to a Java game as part of a team project.",
+      "Worked through design decisions, iteration, and execution as a group.",
+      "Shows my ability to apply software engineering concepts in a more interactive setting."
+    ],
+    links: {
+      repo: "https://github.com/dmusau23/itec3860-game"
+    },
+    image: "/vite.svg"
+  }
 ];
