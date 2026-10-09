@@ -2,36 +2,36 @@ import React from 'react';
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 px-4 bg-gray-900 text-center transition-colors duration-500">
-      <h3 className="text-3xl font-bold text-cyan-400 mb-4 animate-fade-in">Get in Touch</h3>
-      <p className="text-gray-300 text-lg mb-6 animate-fade-in delay-100">Let's build something great together. Reach out to collaborate, hire, or just say hi.</p>
+    <section id="contact" className="content-section contact-section">
+      <div className="section-heading"><span className="section-number">06</span><h2>Open channel</h2></div>
+      <p className="section-intro">Have a product problem, a role, or a good technical question? Send it through.</p>
 
-      <form action="https://formsubmit.co/danielmaxniel@gmail.com" method="POST" className="max-w-xl mx-auto space-y-4 animate-fade-in delay-200">
+      <form action="https://formsubmit.co/danielmaxniel@gmail.com" method="POST" className="contact-form">
         <input type="hidden" name="_captcha" value="false" />
         <input
           type="email"
           name="email"
           placeholder="Your Email"
           required
-          className="w-full px-4 py-2 rounded-md border border-gray-300"
+          className="form-control"
         />
         <input
           type="text"
           name="subject"
           placeholder="Subject"
           required
-          className="w-full px-4 py-2 rounded-md border border-gray-300"
+          className="form-control"
         />
         <textarea
           name="message"
           rows="4"
           placeholder="Your Message"
           required
-          className="w-full px-4 py-2 rounded-md border border-gray-300"
+          className="form-control"
         ></textarea>
         <button
           type="submit"
-          className="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-6 py-3 rounded-lg shadow transition-all duration-300 transform hover:scale-105"
+          className="button button-primary form-submit"
         >
           Send Message
         </button>

@@ -2,12 +2,14 @@ import React from 'react';
 
 export default function About() {
   return (
-    <section id="about" className="py-20 px-4 bg-gray-900 transition-colors duration-500">
-      <div className="max-w-4xl mx-auto text-center">
-        <h3 className="text-3xl font-bold text-cyan-400 mb-4 animate-fade-in">About Me</h3>
-        <p className="text-gray-300 text-lg animate-fade-in delay-100">
-          I'm a junior Software Development student with hands-on experience in React, Java, Spring Boot, and MySQL. I love building meaningful, user-centered apps. Currently working on a smart event management system called <span className="text-cyan-400 font-semibold">SmartCrowd</span>.
-        </p>
+    <section id="about" className="content-section about-section">
+      <div className="section-heading"><span className="section-number">02</span><h2>How I work</h2></div>
+      <div className="about-layout">
+        <p className="about-lead">Software should feel inevitable: clear to use, considered under pressure, and easy for the next engineer to understand.</p>
+        <div className="about-copy">
+          <p>I'm a software development student with hands-on experience across React, Java, Spring Boot, and MySQL. I build backend APIs and real-time interfaces that reduce duplicate data and make operations easier for users.</p>
+          <p>Right now, I'm developing <strong>SmartCrowd</strong>, an event management system with live check-in, role-based access, and data-driven dashboards.</p>
+        </div>
       </div>
     </section>
   );

@@ -87,34 +87,32 @@ const Skills = () => {
   }, []);
 
   return (
-    <section id="skills" className="bg-gray-950 py-20 px-6">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-cyan-400 mb-4">Skills</h2>
-        <div className="w-24 h-1 bg-cyan-400 mx-auto mb-12 rounded-full blur-sm" />
-
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    <section id="skills" className="content-section skills-section">
+      <div className="section-heading"><span className="section-number">03</span><h2>Technical stack</h2></div>
+      <p className="section-intro">Tools I use to move from a clear idea to a dependable release.</p>
+        <div className="skills-grid">
           {skillGroups.map((group, gIndex) => (
             <div
               key={gIndex}
-              className={`bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-cyan-500/30 transition-transform transform hover:-translate-y-1 ${
+              className={`skill-group ${
                 fadeIn
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-5"
               }`}
               style={{ transitionDelay: `${gIndex * 150}ms` }}
             >
-              <h3 className="text-xl font-semibold text-white mb-6">
+              <h3>
                 {group.category}
               </h3>
-              <div className="grid grid-cols-2 gap-6 justify-items-center">
+              <div className="skill-list">
                 {group.skills.map((skill, index) => (
-                  <div key={index} className="flex flex-col items-center">
+                  <div key={index} className="skill-item">
                     <img
                       src={skill.icon}
                       alt={skill.name}
-                      className="w-12 h-12 mb-2 drop-shadow-lg"
+                      className="skill-icon"
                     />
-                    <p className="text-gray-400 text-sm font-medium text-center">
+                    <p>
                       {skill.name}
                     </p>
                   </div>
@@ -123,7 +121,6 @@ const Skills = () => {
             </div>
           ))}
         </div>
-      </div>
     </section>
   );
 };
