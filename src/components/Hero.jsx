@@ -9,8 +9,8 @@ export default function Hero() {
         </p>
 
         <h1>
-          Building software<br />
-          <em>with purpose.</em>
+          Daniel Musau<br />
+          <em>Building software with purpose.</em>
         </h1>
 
         <p className="hero-copy">

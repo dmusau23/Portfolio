@@ -15,8 +15,8 @@ export default function About() {
 
         <div className="about-copy">
           <p>
-            I’m a software development student with experience in Java, Spring Boot, React,
-            TypeScript, and database-driven applications. I enjoy turning ideas into working
+            I’m Daniel Musau, a software development student with experience in Java, Spring Boot,
+            React, TypeScript, and database-driven applications. I enjoy turning ideas into working
             solutions and learning the parts of software that make products reliable for real users.
           </p>
           <p>

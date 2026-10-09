@@ -11,8 +11,8 @@ export default function Resume() {
             <em>speak clearly.</em>
           </h2>
           <p className="resume-copy">
-            I’m building a portfolio around practical projects, collaborative work, and hands-on
-            front-end and back-end development. If you want to connect, discuss opportunities,
+            I’m Daniel Musau, a software developer focused on practical projects, collaborative work,
+            and hands-on front-end and back-end development. If you want to connect, discuss opportunities,
             or talk through a project, I’m open to it.
           </p>
         </div>

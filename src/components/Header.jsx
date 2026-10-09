@@ -4,7 +4,7 @@ export default function Header({ isMenuOpen, setIsMenuOpen, handleNavClick, isLi
       <nav className="nav-wrap" aria-label="Primary navigation">
         <a href="#home" className="brand" onClick={handleNavClick} aria-label="Daniel Musau home">
           <span className="brand-mark">DM</span>
-          <span className="brand-label">software engineer <b>/</b> portfolio</span>
+          <span className="brand-label">Daniel Musau <b>/</b> portfolio</span>
         </a>
 
         <button
