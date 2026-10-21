@@ -1,26 +1,28 @@
-import React from 'react';
+export default function Resume({ content }) {
+  const { resume } = content;
 
-export default function Contact() {
   return (
-    <section id="contact" className="content-section contact-section">
-      <div className="section-heading">
-        <span className="section-number">06</span>
-        <h2>Open channel</h2>
+    <section id="resume" className="content-section resume-section">
+      <div className="resume-panel">
+        <div>
+          <p className="eyebrow">
+            <span>05</span> // {resume.eyebrow}
+          </p>
+          <h2 className="resume-title">{resume.heading}</h2>
+          <p className="resume-copy">{resume.copy}</p>
+        </div>
+
+        <div className="resume-actions">
+          <a href="https://github.com/dmusau23" target="_blank" rel="noreferrer" className="button button-primary">
+            {resume.github}
+          </a>
+          <a href="mailto:danielmaxniel@gmail.com" className="button button-quiet">
+            {resume.email}
+          </a>
+        </div>
       </div>
-
-      <p className="section-intro">
-        Have a project, opportunity, or technical question? I’d be glad to connect.
-      </p>
-
-      <form action="https://formsubmit.co/danielmaxniel@gmail.com" method="POST" className="contact-form">
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="email" name="email" placeholder="Your Email" required className="form-control" />
-        <input type="text" name="subject" placeholder="Subject" required className="form-control" />
-        <textarea name="message" rows="4" placeholder="Your Message" required className="form-control" />
-        <button type="submit" className="button button-primary form-submit">
-          Send Message
-        </button>
-      </form>
     </section>
   );
 }
+
+

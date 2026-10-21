@@ -1,49 +1,80 @@
-export default function Hero() {
+export default function Header({
+  isMenuOpen,
+  setIsMenuOpen,
+  handleNavClick,
+  isLightMode,
+  setIsLightMode,
+  locale,
+  setLocale,
+  content,
+}) {
   return (
-    <section id="home" className="hero-section">
-      <div className="hero-grid" />
+    <header className="site-header">
+      <nav className="nav-wrap" aria-label="Primary navigation">
+        <a href="#home" className="brand" onClick={handleNavClick} aria-label="Daniel Musau home">
+          <span className="brand-mark">DM</span>
+          <span className="brand-label">
+            Daniel Musau <b>/</b> portfolio
+          </span>
+        </a>
 
-      <div className="hero-content">
-        <p className="eyebrow">
-          <span>01</span> // software engineer
-        </p>
+        <div className="nav-actions">
+          <div className="language-switcher" aria-label={content.common.language} role="tablist">
+            <button
+              type="button"
+              className={locale === 'en' ? 'is-active' : ''}
+              onClick={() => setLocale('en')}
+              aria-label="Switch to English"
+            >
+              EN
+            </button>
+            <button
+              type="button"
+              className={locale === 'fr' ? 'is-active' : ''}
+              onClick={() => setLocale('fr')}
+              aria-label="Passer en français"
+            >
+              FR
+            </button>
+          </div>
 
-        <h1>
-          Daniel Musau<br />
-          <em>Building software with purpose.</em>
-        </h1>
-
-        <p className="hero-copy">
-          I design practical web applications and backend systems using Java, Spring Boot,
-          React, TypeScript, and a strong focus on clean, maintainable engineering.
-        </p>
-
-        <div className="hero-actions">
-          <a href="#projects" className="button button-primary">
-            Explore my work <span>↓</span>
-          </a>
-          <a href="mailto:danielmaxniel@gmail.com" className="button button-quiet">
-            Start a conversation <span>↗</span>
-          </a>
+          <button
+            className="theme-toggle"
+            type="button"
+            onClick={() => setIsLightMode(!isLightMode)}
+            aria-label={`Switch to ${isLightMode ? 'dark' : 'light'} mode`}
+            title={`Switch to ${isLightMode ? 'dark' : 'light'} mode`}
+          >
+            <span aria-hidden="true">{isLightMode ? '☾' : '☼'}</span>
+          </button>
         </div>
 
-        <p className="hero-status">
-          <i /> Open to software engineering opportunities
-          <span>Atlanta, GA · EST</span>
-        </p>
-      </div>
+        <button
+          className="menu-toggle"
+          type="button"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-expanded={isMenuOpen}
+          aria-controls="primary-links"
+        >
+          <span />
+          <span />
+          <span className="sr-only">Toggle navigation</span>
+        </button>
 
-      <div className="hero-code" aria-hidden="true">
-        <span>01</span>
-        <span>02</span>
-        <span>03</span>
-        <span>04</span>
-        <code>
-          const <b>build</b> = clarity<br />
-          + reliability<br />
-          + curiosity;
-        </code>
-      </div>
-    </section>
+        <div id="primary-links" className={`nav-links ${isMenuOpen ? 'is-open' : ''}`}>
+          <a href="#about" onClick={handleNavClick}>{content.nav.about}</a>
+          <a href="#skills" onClick={handleNavClick}>{content.nav.stack}</a>
+          <a href="#projects" onClick={handleNavClick}>{content.nav.work}</a>
+          <a href="https://github.com/dmusau23" target="_blank" rel="noopener noreferrer">
+            {content.nav.github}
+          </a>
+          <a href="mailto:danielmaxniel@gmail.com" className="nav-resume" onClick={handleNavClick}>
+            {content.nav.contact} <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </nav>
+    </header>
   );
 }
+
+
