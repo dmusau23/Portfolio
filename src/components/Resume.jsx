@@ -1,65 +1,27 @@
-export default function ProjectCard({ project, labels = {} }) {
+export default function Resume({ content }) {
+  const { resume } = content;
+
   return (
-    <article className="project-card">
-      <div className="project-card-inner">
-        {project.image && (
-          <img
-            src={project.image}
-            alt={project.title}
-            className="project-image"
-            loading="lazy"
-          />
-        )}
+    <section id="resume" className="content-section resume-section">
+      <div className="resume-panel">
+        <div>
+          <p className="eyebrow">
+            <span>05</span> // {resume.eyebrow}
+          </p>
+          <h2 className="resume-title">{resume.heading}</h2>
+          <p className="resume-copy">{resume.copy}</p>
+        </div>
 
-        <div className="project-copy">
-          <header className="project-header">
-            <h3>{project.title}</h3>
-            <p>
-              {project.period} <span>·</span> {project.tagline}
-            </p>
-          </header>
-
-          <ul className="project-highlights">
-            {project.highlights?.map((h, i) => (
-              <li key={i}>{h}</li>
-            ))}
-          </ul>
-
-          {project.tech?.length > 0 && (
-            <div className="tech-list">
-              {project.tech.map((t) => (
-                <span key={t} className="tech-tag">
-                  {t}
-                </span>
-              ))}
-            </div>
-          )}
-
-          <div className="project-links">
-            {project.links?.demo && (
-              <a
-                href={project.links.demo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-link"
-              >
-                {labels.demo || 'Live Demo'}
-              </a>
-            )}
-            {project.links?.repo && (
-              <a
-                href={project.links.repo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-link muted-link"
-              >
-                {labels.repo || 'GitHub'}
-              </a>
-            )}
-          </div>
+        <div className="resume-actions">
+          <a href="https://github.com/dmusau23" target="_blank" rel="noreferrer" className="button button-primary">
+            {resume.github}
+          </a>
+          <a href="mailto:danielmaxniel@gmail.com" className="button button-quiet">
+            {resume.email}
+          </a>
         </div>
       </div>
-    </article>
+    </section>
   );
 }
 

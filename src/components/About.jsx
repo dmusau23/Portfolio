@@ -1,45 +1,20 @@
-export default function Hero({ content }) {
-  const { hero } = content;
+export default function About({ content }) {
+  const { about } = content;
 
   return (
-    <section id="home" className="hero-section">
-      <div className="hero-grid" />
+    <section id="about" className="content-section about-section">
+      <div className="section-heading">
+        <span className="section-number">02</span>
+        <h2>{about.section}</h2>
+      </div>
 
-      <div className="hero-shell">
-        <div className="hero-content">
-          <p className="eyebrow">
-            <span>01</span> // {hero.eyebrow}
-          </p>
+      <div className="about-layout">
+        <p className="about-lead">{about.lead}</p>
 
-          <h1>
-            Daniel Musau
-            <br />
-            <em>{hero.headlineSecondary}</em>
-          </h1>
-
-          <p className="hero-copy">{hero.blurb}</p>
-
-          <div className="hero-actions">
-            <a href="#projects" className="button button-primary">
-              {hero.primary} <span>↓</span>
-            </a>
-            <a href="mailto:danielmaxniel@gmail.com" className="button button-quiet">
-              {hero.secondary} <span>↗</span>
-            </a>
-          </div>
-
-          <p className="hero-status">
-            <i /> {hero.status}
-            <span>{hero.location}</span>
-          </p>
-        </div>
-
-        <div className="hero-code" aria-hidden="true">
-          <span>01</span>
-          <span>02</span>
-          <span>03</span>
-          <span>04</span>
-          <code>{hero.code}</code>
+        <div className="about-copy">
+          <p>{about.intro}</p>
+          <p>{about.detailOne}</p>
+          <p>{about.detailTwo}</p>
         </div>
       </div>
     </section>

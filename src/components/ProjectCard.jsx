@@ -1,21 +1,65 @@
-import { projects } from '../data/projects';
-import ProjectCard from './ProjectCard';
-
-export default function Projects({ content }) {
+export default function ProjectCard({ project, labels = {} }) {
   return (
-    <section id="projects" className="content-section projects-section">
-      <header className="section-heading">
-        <span className="section-number">04</span>
-        <h2>{content.projects.section}</h2>
-      </header>
-      <p className="section-intro">{content.projects.intro}</p>
+    <article className="project-card">
+      <div className="project-card-inner">
+        {project.image && (
+          <img
+            src={project.image}
+            alt={project.title}
+            className="project-image"
+            loading="lazy"
+          />
+        )}
 
-      <div className="projects-grid">
-        {projects.map((p) => (
-          <ProjectCard key={p.title} project={p} labels={content.projects} />
-        ))}
+        <div className="project-copy">
+          <header className="project-header">
+            <h3>{project.title}</h3>
+            <p>
+              {project.period} <span>·</span> {project.tagline}
+            </p>
+          </header>
+
+          <ul className="project-highlights">
+            {project.highlights?.map((h, i) => (
+              <li key={i}>{h}</li>
+            ))}
+          </ul>
+
+          {project.tech?.length > 0 && (
+            <div className="tech-list">
+              {project.tech.map((t) => (
+                <span key={t} className="tech-tag">
+                  {t}
+                </span>
+              ))}
+            </div>
+          )}
+
+          <div className="project-links">
+            {project.links?.demo && (
+              <a
+                href={project.links.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-link"
+              >
+                {labels.demo || 'Live Demo'}
+              </a>
+            )}
+            {project.links?.repo && (
+              <a
+                href={project.links.repo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-link muted-link"
+              >
+                {labels.repo || 'GitHub'}
+              </a>
+            )}
+          </div>
+        </div>
       </div>
-    </section>
+    </article>
   );
 }
 
